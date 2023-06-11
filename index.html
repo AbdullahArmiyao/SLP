@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectU</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font.css">
+</head>
+<body>
+    <div class="main">
+        <buttton class="signup1" onclick="myFunction2()"><span>Click here to join</span></buttton>
+        <div class="intro">
+            <p class="introtext">
+                <span>Elevate Your</span>
+                <span>College Journey</span>
+                <span>With <b class="appname">ConnectU!</b></span>
+            </p>
+        </div>
+        <div class="bar"></div>
+        <div class="textbox" id="textbox">
+            <p>
+                Join <span>ConnectU</span>, the ultimate social media platform for college students.
+                Connect with like-minded peers and discover a vibrant community of students 
+                offering the same or similar courses. Your network is your net worth and <span>Trend Up</span>
+                empowers you to expand it, unlocking a wealth of connections and limitless opportunities.
+                Don't miss out the chance to level up your college experience.
+            </p>
+        </div>
+        <div class="container" id="container">
+            <form action="" method="post" autocomplete="off">
+                <label for="name"><b>User Name</b></label>
+                <input type="text" name="name" id="name" placeholder="Username..." required>
+                <label for="email"><b>Email</b></label>
+                <input type="email" name="email" id="email" placeholder="Email..." required>
+                <label for="course"><b>Course Offered</b></label>
+                <input type="text" name="course" id="course" placeholder="Course..." required>
+                <label for="university"><b>University</b></label>
+                <input type="text" name="university" id="uni" placeholder="University..." required>
+                <input type="submit" name="but" value="Register" onclick="myFunction1()">
+                <p class="text"><br>ConnectU! for registering...</p>
+            </form>
+        </div>
+    </div>
+    <script>
+        function myFunction1() {
+            document.getElementById("container").style.display = "none";
+            document.getElementById("textbox").innerHTML = "<p>Thank You For Registering...We Will Keep You Updated</p>";
+            document.getElementById("textbox").style.display = "block";
+            document.getElementById("textbox").style.fontSize = "200%";
+        }
+        function myFunction2() {
+            document.getElementById("container").style.display = "block";
+            document.getElementById("textbox").style.display = "none";
+        }
+    </script>
+</body>
+</html>
