@@ -1,59 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ConnectU</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="font.css">
+    <title>UNECT - Waitlist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"/>
+    <meta description="Elevate your college journey with Unect!" />
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Gabarito&display=swap');
+
+        *{
+            font-family: 'gabarito', Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+    </style>
+
 </head>
-<body>
-    <div class="main">
-        <buttton class="signup1" onclick="myFunction2()"><span>Click here to join</span></buttton>
-        <div class="intro">
-            <p class="introtext">
-                <span>Elevate Your</span>
-                <span>College Journey</span>
-                <span>With <b class="appname">ConnectU!</b></span>
-            </p>
+<body class="bg-black w-screen md:h-screen overflow-x-hidden">
+    <div class="w-full p-4 md:p-8 flex flex-col items-center justify-center">
+        <p class="text-gray-400 mt-2 md:mt-4 mb-4 md:mb-6">COMING SOON</p>
+        <div class="w-[80%] mb-6 md:mb-8 relative">
+            <p class="text-center heroText text-semibold text-white text-4xl md:text-8xl animate-fade-up mb-[250px] md:mb-0"> Elevate your college journey with Unect!</p>
+            <div class="md:w-[300px] w-[150px] md:h-[300px] h-[150px] overflow-hidden rounded-full absolute md:top-[-150px] top-[130px] md:left-[-150px] left-[10px] z-[-10] animate-fromLeft">
+                <img src="back2.jpg"/>
+            </div>
+            <div class="absolute md:w-[300px] w-[150px]  md:h-[300px] h-[150px] rounded-full overflow-hidden z-[-10] top-[220px]  md:top-[50px] right-[5px]  md:right-[-90px] animate-fromRight">
+                <img src="back1.jpg"/>
+            </div>
         </div>
-        <div class="bar"></div>
-        <div class="textbox" id="textbox">
-            <p>
-                Join <span>ConnectU</span>, the ultimate social media platform for college students.
+        <a href="#form"><button class="bg-red-500 px-4 py-2 rounded-full text-white text-xl mb-8 hover:bg-white hover:text-black duration-150 animate-fade-in opacity-0" ><span>JOIN HERE</span></button></a>
+        <div class="w-[70%] md:w-[50%] animate-fade-in opacity-0 mb-10" id="textbox">
+            <p class="text-white text-center text-xl">
+                Join Unect, the ultimate social media platform for college students.
                 Connect with like-minded peers and discover a vibrant community of students 
-                offering the same or similar courses. Your network is your net worth and <span>Trend Up</span>
+                offering the same or similar courses. Your network is your net worth and <span>Unect</span>
                 empowers you to expand it, unlocking a wealth of connections and limitless opportunities.
                 Don't miss out the chance to level up your college experience.
             </p>
         </div>
-        <div class="container" id="container">
-            <form action="" method="post" autocomplete="off">
-                <label for="name"><b>User Name</b></label>
-                <input type="text" name="name" id="name" placeholder="Username..." required>
-                <label for="email"><b>Email</b></label>
-                <input type="email" name="email" id="email" placeholder="Email..." required>
-                <label for="course"><b>Course Offered</b></label>
-                <input type="text" name="course" id="course" placeholder="Course..." required>
-                <label for="university"><b>University</b></label>
-                <input type="text" name="university" id="uni" placeholder="University..." required>
-                <input type="submit" name="but" value="Register" onclick="myFunction1()">
-                <p class="text"><br>ConnectU! for registering...</p>
-            </form>
+        <div class="mt-10 animate-fade-in opacity-0" id="form">
+            <div id="getWaitlistContainer" data-waitlist_id="11814" data-widget_type="WIDGET_1"></div>
         </div>
     </div>
-    <script>
-        function myFunction1() {
-            document.getElementById("container").style.display = "none";
-            document.getElementById("textbox").innerHTML = "<p>Thank You For Registering...We Will Keep You Updated</p>";
-            document.getElementById("textbox").style.display = "block";
-            document.getElementById("textbox").style.fontSize = "200%";
-        }
-        function myFunction2() {
-            document.getElementById("container").style.display = "block";
-            document.getElementById("textbox").style.display = "none";
-        }
-    </script>
+    <script src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></script>
+
+    <script src="app.js"></script>
 </body>
 </html>
